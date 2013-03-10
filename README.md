@@ -1,7 +1,7 @@
-# IO::AccessLazy
+# IO::AccessLazy  [![Build Status](https://travis-ci.org/zonuexe/ruby-io-access_lazy.png?branch=develop)](https://travis-ci.org/zonuexe/ruby-io-access_lazy) [![Code Climate](https://codeclimate.com/github/zonuexe/ruby-io-access_lazy.png)](https://codeclimate.com/github/zonuexe/ruby-io-access_lazy)
 
  * <del>さいふおとした。<strong>泣いてる</strong>。</del>
- * <ins>回収されたらしい。世の中捨てたもんじゃない ヾ(〃＞＜)ﾉﾞ☆</ins>
+ * <ins>回収された<del>らしい</del>。世の中捨てたもんじゃない ヾ(〃＞＜)ﾉﾞ☆</ins>
 
 ## Installation
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 
  * IOオブジェクトから任意の行を遅延して取得します
  * シェルスクリプティングだと `head(1)` とか `tail(1)` を使ってやるイメージです
-   * **タブンネ**
+   * *タブンネ*
 
 ## Usage
 
