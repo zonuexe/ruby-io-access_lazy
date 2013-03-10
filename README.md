@@ -1,6 +1,7 @@
 # IO::AccessLazy
 
-さいふおとした。 **泣いてる**。
+ * <del>さいふおとした。<strong>泣いてる</strong>。</del>
+ * <ins>回収されたらしい。世の中捨てたもんじゃない ヾ(〃＞＜)ﾉﾞ☆</ins>
 
 ## Installation
 
@@ -16,9 +17,33 @@ Or install it yourself as:
 
     $ gem install io-access_lazy
 
+## 日本語でおｋ (Japanese)
+
+ * IOオブジェクトから任意の行を遅延して取得します
+ * シェルスクリプティングだと `head(1)` とか `tail(1)` を使ってやるイメージです
+   * **タブンネ**
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+fp = open("hoge.txt", 'r')
+fp.read
+# => "A
+# B
+# C
+# D
+# E
+# F
+# G
+# H"
+fp_lazy = IO::AccessLazy.new(fp)
+line5 = fp_lazy[5]
+# => "F"
+line2_6 = fp_lazy[2..4]
+# => ["C\n", "D\n", "E\n"]
+line3_l = fp_lazy[3..-1]
+# => ["D\n", "E\n", "F\n", "G\n", "H\n"]
+```
 
 ## Contributing
 

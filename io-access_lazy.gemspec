@@ -5,11 +5,11 @@ require 'io/access_lazy/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "io-access_lazy"
-  spec.version       = Io::AccessLazy::VERSION
+  spec.version       = IO::AccessLazy::VERSION
   spec.authors       = ["USAMI Kenta"]
   spec.email         = ["tadsan@zonu.me"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{This gem provide lazy access method like array to IO object.}
+  spec.summary       = %q{NURUPO}
   spec.homepage      = "http://dt.zonu.me/"
   spec.license       = "GPL Version 3 or NYSL"
 
